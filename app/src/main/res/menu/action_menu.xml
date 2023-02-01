@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_kembali"
+        android:icon="@drawable/ic_back"
+        android:title="@string/back"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_photo"
+        android:icon="@drawable/ic_cam"
+        android:title="@string/photo"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_bookmark"
+        android:icon="@drawable/ic_bookmark"
+        android:title="@string/saved"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu"
+        android:icon="@drawable/ic_more_horiz"
+        android:title="@string/more"
+        app:showAsAction="always"/>
+
+</menu>

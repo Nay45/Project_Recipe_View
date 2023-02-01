@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/jagung"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="@dimen/verticalView"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back"
+                    android:id="@+id/ic_back"
+                    android:layout_centerVertical="true"
+                    app:tint="@color/white"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_cam"
+                    android:id="@+id/ic_cam"
+                    android:layout_toLeftOf="@id/ic_save"
+                    android:layout_marginRight="15dp"
+                    app:tint="@color/white"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bookmark"
+                    android:id="@+id/ic_save"
+                    android:layout_toLeftOf="@id/ic_more"
+                    android:layout_marginRight="15dp"
+                    app:tint="@color/white"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more_horiz"
+                    android:id="@+id/ic_more"
+                    android:layout_alignParentEnd="true"
+                    app:tint="@color/white"/>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jagung Bakar"
+            android:layout_marginLeft="@dimen/horizontalView"
+            android:textSize="20sp"
+            android:textColor="?attr/colorOnSecondary"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/verticalView"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontalView"
+            android:layout_marginRight="@dimen/horizontalView"
+            android:layout_marginBottom="@dimen/verticalView">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/kyedae"
+                android:id="@+id/profile_image"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/profile_image">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/horizontalView"
+                        android:layout_marginRight="@dimen/horizontalView"
+                        android:text="Kyedae Shymko"
+                        android:textColor="?attr/colorOnSecondary"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="2dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/horizontalView"
+                    android:layout_marginRight="@dimen/horizontalView"
+                    android:text="\@Kyedae_Shymko"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="4dp"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:layout_marginLeft="15.5dp"
+                        android:src="@drawable/ic_baseline_location_on_24"
+                        app:tint="#d3d3d3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="USA"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontalView"
+            android:layout_marginRight="@dimen/horizontalView"
+            android:layout_marginBottom="@dimen/verticalView"
+            android:text="@string/desc"
+            android:textColor="?attr/colorOnSecondary"
+            android:maxLines="1"
+            android:maxLength="70"
+            android:ellipsize="marquee"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lihat selengkapnya"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/horizontalView"
+            android:layout_marginBottom="@dimen/verticalView"/>
+
+        <View
+            android:layout_width="370dp"
+            android:layout_height="2dp"
+            android:background="#d3d3d3"
+            android:layout_marginLeft="@dimen/horizontalView"
+            android:layout_marginBottom="@dimen/verticalView"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontalView"
+            android:layout_marginRight="@dimen/horizontalView"
+            android:layout_marginBottom="@dimen/verticalView"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_alarm"
+                app:tint="#d3d3d3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="10 - 15 menit"
+                android:gravity="center"/>
+
+        </TableRow>
+
+        <View
+            android:layout_width="370dp"
+            android:layout_height="2dp"
+            android:background="#d3d3d3"
+            android:layout_marginLeft="@dimen/horizontalView"
+            android:layout_marginBottom="@dimen/verticalView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bahan-bahan"
+            android:layout_marginLeft="@dimen/horizontalView"
+            android:textSize="20sp"
+            android:textColor="?attr/colorOnSecondary"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontalView"
+            android:layout_marginRight="@dimen/horizontalView"
+            android:layout_marginBottom="@dimen/verticalView">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_people_"
+                app:tint="#d3d3d3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 - 2 orang"
+                android:layout_gravity="center"/>
+
+        </TableRow>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontalView"
+            android:layout_marginRight="@dimen/horizontalView">
+
+            <TextView
+                android:id="@+id/bahan1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tes"
+                android:textColor="?attr/colorOnSecondary"/>
+
+            <View
+                android:layout_width="370dp"
+                android:layout_height="2dp"
+                android:background="#d3d3d3"
+                android:layout_marginBottom="@dimen/verticalView"/>
+
+            <TextView
+                android:id="@+id/bahan2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tes"
+                android:textColor="?attr/colorOnSecondary"/>
+
+            <View
+                android:layout_width="370dp"
+                android:layout_height="2dp"
+                android:background="#d3d3d3"
+                android:layout_marginBottom="@dimen/verticalView"/>
+
+            <TextView
+                android:id="@+id/bahan3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tes"
+                android:textColor="?attr/colorOnSecondary"/>
+
+            <View
+                android:layout_width="370dp"
+                android:layout_height="2dp"
+                android:background="#d3d3d3"
+                android:layout_marginBottom="@dimen/verticalView"/>
+
+            <TextView
+                android:id="@+id/bahan4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tes"
+                android:textColor="?attr/colorOnSecondary"/>
+
+            <View
+                android:layout_width="370dp"
+                android:layout_height="2dp"
+                android:background="#d3d3d3"
+                android:layout_marginBottom="@dimen/verticalView"/>
+
+            <TextView
+                android:id="@+id/bahan5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tes"
+                android:textColor="?attr/colorOnSecondary"/>
+
+            <View
+                android:layout_width="370dp"
+                android:layout_height="2dp"
+                android:background="#d3d3d3"
+                android:layout_marginBottom="@dimen/verticalView"/>
+
+            <TextView
+                android:id="@+id/bahan6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tes"
+                android:textColor="?attr/colorOnSecondary"
+                android:layout_marginBottom="@dimen/verticalView"/>
+
+            <View
+                android:layout_width="370dp"
+                android:layout_height="2dp"
+                android:background="#d3d3d3"
+                android:layout_marginBottom="@dimen/verticalView"/>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Langkah"
+            android:layout_marginLeft="@dimen/horizontalView"
+            android:textSize="20sp"
+            android:textColor="?attr/colorOnSecondary"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/verticalView"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/verticalView"
+            android:layout_marginLeft="@dimen/horizontalView"
+            android:layout_marginRight="@dimen/horizontalView">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_one"
+                app:tint="?attr/colorOnSecondary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Campurkan semua bahan saus dan olesan, aduk rata."
+                android:textColor="?attr/colorOnSecondary"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/verticalView"
+            android:layout_marginLeft="@dimen/horizontalView"
+            android:layout_marginRight="@dimen/horizontalView">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_two"
+                app:tint="?attr/colorOnSecondary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Di wadah besar, tata jagung lalu guyur dengan bahan saus sambil jagung diolesi saus secara merata. Diamkan jagung minimal 15 menit agar bumbu meresap."
+                android:textColor="?attr/colorOnSecondary"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/verticalView"
+            android:layout_marginLeft="@dimen/horizontalView"
+            android:layout_marginRight="@dimen/horizontalView">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_three"
+                app:tint="?attr/colorOnSecondary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setelah itu, panggang jagung sambil dioles saus berulang-ulang, hingga matang. Sesaat setelah diangkat, olesi kembali tipis-tipis aja bumbu saus tadi. Taburi parmesan."
+                android:textColor="?attr/colorOnSecondary"/>
+
+        </TableRow>
+
+    </LinearLayout>
+
+</ScrollView>

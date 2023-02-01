@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="horizontalView">20dp</dimen>
+    <dimen name="verticalView">20dp</dimen>
+    <dimen name="spaceBeetweeen">5dp</dimen>
+</resources>
