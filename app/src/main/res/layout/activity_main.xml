@@ -18,8 +18,8 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:src="@drawable/jagung"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
@@ -160,41 +160,45 @@
             android:layout_marginRight="@dimen/horizontalView"
             android:layout_marginBottom="@dimen/verticalView"/>
 
-        <View
-            android:layout_width="370dp"
-            android:layout_height="2dp"
-            android:background="#d3d3d3"
-            android:layout_marginLeft="@dimen/horizontalView"
-            android:layout_marginBottom="@dimen/verticalView"/>
-
-        <TableRow
+        <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/horizontalView"
-            android:layout_marginRight="@dimen/horizontalView"
-            android:layout_marginBottom="@dimen/verticalView"
-            android:gravity="center">
+            android:layout_marginRight="@dimen/horizontalView">
 
-            <ImageView
-                android:layout_width="wrap_content"
+            <View
+                android:layout_width="370dp"
+                android:layout_height="2dp"
+                android:background="#d3d3d3"
+                android:layout_marginBottom="@dimen/verticalView"/>
+
+            <TableRow
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_alarm"
-                app:tint="#d3d3d3"/>
+                android:layout_marginBottom="@dimen/verticalView"
+                android:gravity="center">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="10 - 15 menit"
-                android:gravity="center"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_alarm"
+                    app:tint="#d3d3d3"/>
 
-        </TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="10 - 15 menit"
+                    android:gravity="center"/>
 
-        <View
-            android:layout_width="370dp"
-            android:layout_height="2dp"
-            android:background="#d3d3d3"
-            android:layout_marginLeft="@dimen/horizontalView"
-            android:layout_marginBottom="@dimen/verticalView"/>
+            </TableRow>
+
+            <View
+                android:layout_width="370dp"
+                android:layout_height="2dp"
+                android:background="#d3d3d3"
+                android:layout_marginBottom="@dimen/verticalView"/>
+
+        </TableLayout>
 
         <TextView
             android:layout_width="wrap_content"
