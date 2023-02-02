@@ -18,6 +18,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+        supportActionBar?.setLogo(R.drawable.ic_back)
+        supportActionBar?.setDisplayUseLogoEnabled(true)
+
         bahan1 = findViewById(R.id.bahan1)
         bahan2 = findViewById(R.id.bahan2)
         bahan3 = findViewById(R.id.bahan3)
@@ -44,6 +51,11 @@ class MainActivity : AppCompatActivity() {
             "<b>1,5 sdm brown sugar atau gula pasir</b>"
         )
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.action_menu, menu)
+        return true
     }
 
 }

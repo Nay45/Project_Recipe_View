@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:id="@+id/activity_main">r
+    android:id="@+id/activity_main">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,46 +25,46 @@
                 android:scaleType="fitXY"
                 android:layout_marginBottom="@dimen/verticalView"/>
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="16dp">
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="16dp">-->
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_back"
-                    android:id="@+id/ic_back"
-                    android:layout_centerVertical="true"
-                    app:tint="@color/white"/>
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/ic_back"-->
+<!--                    android:id="@+id/ic_back"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    app:tint="@color/white"/>-->
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_cam"
-                    android:id="@+id/ic_cam"
-                    android:layout_toLeftOf="@id/ic_save"
-                    android:layout_marginRight="15dp"
-                    app:tint="@color/white"/>
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/ic_cam"-->
+<!--                    android:id="@+id/ic_cam"-->
+<!--                    android:layout_toLeftOf="@id/ic_save"-->
+<!--                    android:layout_marginRight="15dp"-->
+<!--                    app:tint="@color/white"/>-->
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_bookmark"
-                    android:id="@+id/ic_save"
-                    android:layout_toLeftOf="@id/ic_more"
-                    android:layout_marginRight="15dp"
-                    app:tint="@color/white"/>
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/ic_bookmark"-->
+<!--                    android:id="@+id/ic_save"-->
+<!--                    android:layout_toLeftOf="@id/ic_more"-->
+<!--                    android:layout_marginRight="15dp"-->
+<!--                    app:tint="@color/white"/>-->
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_more_horiz"
-                    android:id="@+id/ic_more"
-                    android:layout_alignParentEnd="true"
-                    app:tint="@color/white"/>
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/ic_more_horiz"-->
+<!--                    android:id="@+id/ic_more"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    app:tint="@color/white"/>-->
 
-            </RelativeLayout>
+<!--            </RelativeLayout>-->
 
         </FrameLayout>
 
